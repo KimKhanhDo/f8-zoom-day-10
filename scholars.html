@@ -176,15 +176,45 @@
 
                             <!-- Action Btn -->
                             <div class="action-wrapper">
-                                <button class="action-btn">
+                                <label
+                                    for="magnifying-glass"
+                                    class="action-btn magnifying-label"
+                                >
                                     <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                                </label>
+                                <!-- Search Header -->
+                                <input
+                                    type="checkbox"
+                                    id="magnifying-glass"
+                                    class="magnifying-input"
+                                    hidden
+                                />
+                                <div class="header-form-wrapper">
+                                    <form
+                                        action=""
+                                        class="search-header-form"
+                                        autocomplete="off"
+                                    >
+                                        <input
+                                            type="text"
+                                            placeholder="Search..."
+                                            class="search-header-input"
+                                            spellcheck="false"
+                                        />
+                                        <button class="search-header-btn">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </button>
+                                    </form>
+                                </div>
                                 <button class="action-btn">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </button>
                             </div>
                         </div>
 
+                        <!-- Breadcrumb -->
                         <div class="header-content">
                             <h1 class="heading">COURSES</h1>
                             <ul class="breadcrumb">
