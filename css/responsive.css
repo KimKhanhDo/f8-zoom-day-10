@@ -8,7 +8,7 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .container {
-        max-width: 1140px;
+        max-width: 960px;
     }
 
     .header {
@@ -46,7 +46,7 @@
 /* Tablet */
 @media (max-width: 991.98px) {
     .container {
-        max-width: 960px;
+        max-width: 720px;
     }
 
     .header {
@@ -216,7 +216,7 @@
 /* Mobile */
 @media (max-width: 767.98px) {
     .container {
-        max-width: 720px;
+        max-width: 540px;
     }
 
     .main {
