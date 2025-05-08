@@ -8,7 +8,7 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .container {
-        max-width: calc(100% - 80px);
+        max-width: 1140px;
     }
 
     .header {
@@ -46,7 +46,7 @@
 /* Tablet */
 @media (max-width: 991.98px) {
     .container {
-        width: 780px;
+        max-width: 960px;
     }
 
     .header {
@@ -216,8 +216,7 @@
 /* Mobile */
 @media (max-width: 767.98px) {
     .container {
-        width: 750px;
-        max-width: calc(100% - 80px);
+        max-width: 720px;
     }
 
     .main {
@@ -276,5 +275,12 @@
     .footer-inner {
         flex-direction: column;
         gap: 60px;
+    }
+}
+
+/* sm - phones < 576px */
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
     }
 }
