@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Custom Checkbox</title>
+
+        <!-- Styles -->
+        <link
+            rel="stylesheet"
+            href="./css/reset.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./css/custom-checkbox.css"
+        />
+
+        <!-- Embed fonts-->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="custom-panel">
+                <!-- Header row: labels -->
+                <div class="control-row">
+                    <span class="placeholder"></span>
+                    <span>Checkbox</span>
+                    <span>Radio</span>
+                    <span>Switch</span>
+                </div>
+
+                <!-- On row -->
+                <div class="control-row">
+                    <span class="label">On</span>
+
+                    <!-- Checkbox On -->
+                    <label class="checkbox">
+                        <input
+                            type="checkbox"
+                            checked
+                            hidden
+                        />
+                    </label>
+
+                    <!-- Radio On -->
+                    <label class="radio">
+                        <input
+                            type="radio"
+                            name="group"
+                            checked
+                            hidden
+                        />
+                    </label>
+
+                    <!-- Switch On -->
+                    <label class="switch">
+                        <input
+                            type="checkbox"
+                            checked
+                            hidden
+                        />
+                    </label>
+                </div>
+
+                <!-- Off row -->
+                <div class="control-row">
+                    <span class="label">Off</span>
+
+                    <!-- Checkbox Off -->
+                    <label class="checkbox">
+                        <input
+                            type="checkbox"
+                            hidden
+                        />
+                    </label>
+
+                    <!-- Radio Off -->
+                    <label class="radio">
+                        <input
+                            type="radio"
+                            name="group"
+                            hidden
+                        />
+                    </label>
+
+                    <!-- Switch Off -->
+                    <label class="switch">
+                        <input
+                            type="checkbox"
+                            hidden
+                        />
+                    </label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

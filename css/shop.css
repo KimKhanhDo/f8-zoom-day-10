@@ -8,6 +8,7 @@
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -53,7 +54,7 @@ select {
 
 .container {
     width: 1170px; /** Normal condition: width will be 1170px  */
-    max-width: 100%; /** When view < 1170: width will be 100%  */
+    max-width: calc(100% - 40px);
     min-height: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -78,7 +79,7 @@ select {
 .header-wrapper {
     display: flex;
     min-height: 496px;
-    background-image: url(../img/img-banner-2.jpg);
+    background-image: url(../img/img-banner-10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -100,6 +101,7 @@ select {
 .header-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .header-content {
@@ -110,6 +112,15 @@ select {
     gap: 10px;
     flex-grow: 1;
     color: var(--white);
+}
+
+.logo-wrapper a {
+    display: inline-block;
+}
+
+.logo {
+    display: block;
+    width: 165px;
 }
 
 .nav {
@@ -220,10 +231,6 @@ h1.heading {
 
 .sidebar {
     width: 270px;
-}
-
-.shop-wrapper {
-    background-image: url(../img/img-banner-10.jpg);
 }
 
 .search-form {
@@ -561,6 +568,22 @@ h1.heading {
 
 .pagination-btn:hover {
     background: var(--secondary);
+}
+
+/* Upper btn */
+.upper-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    background: var(--primary);
 }
 
 /* Footer */
